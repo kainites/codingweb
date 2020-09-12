@@ -1,0 +1,128 @@
+$spacing: 16px;
+$border: 12px;
+$font: 11px;
+$pink: #fff5fa;
+$blue: #f5fdff;
+$yellow: #fffff5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-family: system-ui;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  padding: $spacing;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  grid-gap: $spacing*2;
+
+  section {
+    padding: $spacing;
+      background-color: $blue;
+    &:nth-child(even) {
+      background-color: $pink;
+    }
+  }
+}
+
+footer {
+  padding: $spacing/2;
+}
+
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: $spacing/2;
+  margin-top: $spacing/2;
+
+  input, textarea {
+    background-color: $pink;
+    outline: none;
+    border: none;
+    border-bottom: $border solid $yellow;
+    text-align: center;
+    justify-content: center;
+  }
+
+  textarea {
+    padding-top: 1.5vw;
+  }
+
+  p {
+    text-align: center;
+    justify-content: center;
+    background-color: $pink;
+    margin-top: $spacing/2;
+    font-size: $font;
+    padding-top: 0.5vw;
+    border: $border double $yellow;
+
+  }
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+#fileFetch {
+  text-align: center;
+  justify-content: center;
+  background-color: $pink;
+  margin-top: $spacing/2;
+  font-size: $font;
+  border: $border double $yellow;
+  .fetched {
+    columns: 150px;
+  }
+}
+
+#fetchedExternal {
+  text-align: center;
+  justify-content: center;
+  background-color: $pink;
+  margin-top: $spacing/2;
+  font-size: $font;
+
+  .fetchedEx {
+    text-align: left;
+    justify-content: center;
+    background-color: $blue;
+    padding: $spacing;
+    border: $border double $yellow;
+    margin-bottom: $spacing/2;
+  }
+}
+
+.button {
+  background-color: $yellow;
+  border: none;
+  padding: $spacing/2 $spacing;
+  width: 100%;
+}
+
+footer {
+  padding: $spacing;
+  text-align: center;
+  font-size: $font;
+  border: none;
+  border-bottom: $border solid $pink;
+}

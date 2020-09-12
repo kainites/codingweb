@@ -1,0 +1,48 @@
+:root{
+--text1: #234567;
+--spacinga: 5%;
+--spacingb: 0.5%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  text-align: justify;
+  font-family: Helvetica;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  background: url('img/night.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+section {
+  text-align: center;
+  background-color: #cccccc77;
+}
+
+#time {
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-gap: var(--spacinga);
+}
+
+#time >h2 {
+  grid-row: 1/2;
+  color: var(--text1);
+  font-size: 7vw;
+}
+
+#time >p {
+  grid-row: 2/3;
+  color: var(--text1);
+  font-size: 5vw;
+}

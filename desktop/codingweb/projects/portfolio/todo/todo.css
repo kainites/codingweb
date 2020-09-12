@@ -1,0 +1,82 @@
+html {
+  background-color: #fbf5ff;
+}
+
+body {
+  text-align: justify;
+  font-family: Helvetica;
+  line-height: 1.500000000000000000001;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 20%;
+  font-size: 2vw;
+  background-color: #ffedf4;
+  padding: 5%;
+  margin: 5%;
+}
+
+#newTodo {
+  color: #123456;
+  grid-column: 1/2;
+}
+
+#filters {
+  color: #123456;
+  grid-column: 2/3;
+}
+
+main {
+  padding: 5%;
+}
+
+#itemList >li {
+  display: grid;
+  grid-template-columns: auto 10% 10%;
+  grid-template-rows: auto;
+  margin-bottom: 5%;
+  justify-items: stretch;
+  background-color: #f0fffd;
+  padding: 10px;
+}
+
+#done {
+  grid-column: 2/3;
+}
+
+#del {
+  grid-column: 3/4;
+}
+
+#itemList >p {
+  color: #123456;
+  grid-column: 1/2;
+  font-family: Helvetica;
+}
+
+form >input{
+  outline: none;
+  border: none;
+  border-bottom: 12px solid #edf7ff;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.button {
+  background-color: #fffaff;
+  border: none;
+}
+
+.done {
+  background-color: #fbfff3;
+}
+
+.del {
+  background-color: #fefff5;
+}
+
+.finished {
+  color: #00ff00;
+  text-decoration: line-through;
+}

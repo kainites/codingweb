@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>fetch</title>
+</head>
+<body>
+  <header>
+    <h1>fetch api</h1>
+  </header>
+  <main>
+    <section id="fromFile">
+      <h2>fetch from file</h2>
+      <button class="button">file</button>
+      <p id="fileFetch">words fetched from file here</p>
+    </section>
+    <section id="externalFetch">
+      <h2>fetch from external</h2>
+      <button class="button">external</button>
+      <p id="fetchedExternal">words fetched from external here</p>
+    </section>
+    <section>
+      <h2>post to external</h2>
+      <form id="externalPost">
+        <input id="title" type="text" placeholder="title" value="">
+        <textarea id="content" name="name" placeholder="content" value=""></textarea>
+        <input class="button" type="submit" value="submit">
+        <p id="postedExternal">words posted here</p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h4>bye bye</h4>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
