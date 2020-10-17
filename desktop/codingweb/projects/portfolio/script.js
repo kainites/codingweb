@@ -73,7 +73,7 @@ function od(name, gender){
 od('h', 'ale');
 alex('hj', 'femajkdhsfle');
 
-function os {
+function os (){
   console.log(`hhhhhhhhhh ${y[4]}`);
   od('sjkdhf', 'apple');
   return `hhhhhhhhhh ${y[4]}`

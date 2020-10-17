@@ -1,17 +1,63 @@
 :root {
- --pudding: #effcfd;
- --podding: #cadffc;
- --pedding: #ffe2e2;
- --pidding: #dcd6f7;
+ --forest: #2C5F2D;
+ --moss: #97BC62;
+ --island: #2BAE66;
+ --bush: #2CAE2D;
+ --leaf: #6FAE2B;
+ --cloud: #FCF6F5;
  --spacing1: 5%;
  --spacing2: 10%;
  --spacing3: 2%;
 }
 
+html {
+  background-color: var(--forest);
+  color: var(--cloud);
+}
+
 body {
   text-align: justify;
-  font-family: Arial;
+  font-family: "Roboto", Georgia, Times, serif;
   line-height: 1.500000000000000000001;
+  margin: 0px;
+}
+
+h1 {
+  position: fixed;
+  margin: 0%;
+  padding: 2vh;
+  z-index: 10;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--cloud);
+  text-decoration: none;
+}
+
+.nav li {
+  display: inline-block;
+  padding-right: 1.25vh;
+}
+
+.nav {
+  white-space: nowrap;
+  font-size: .75rem;
+  font-weight: bold;
+  font-style: italic;
+  position: fixed;
+  left: 5vw;
+  top: 50vh;
+  transform: rotate(270deg) translateX(-50%);
+  text-transform: uppercase;
+  transform-origin: left;
 }
 
 section {
@@ -20,9 +66,16 @@ section {
   text-align: center;
 }
 
+footer {
+  text-align: right;
+  color: var(--island);
+  padding: var(--spacing3);
+}
+
 #title {
-   background-color: var(--pedding);
-   color: var(--pidding);
+   background-color: var(--burgundy);
+   color: var(--midnight);
+   font-size: 2vw;
  }
 
 #info {
@@ -30,24 +83,10 @@ section {
   color: var(--pudding);
 }
 
-#owo {
-  background-color: var(--podding);
-  color: var(--pedding);
-}
-
-#uwu {
-  background-color: var(--pedding);
-  color: var(--pidding);
-}
-
-#iwi {
-  background-color: var(--pidding);
-  color: var(--pedding);
-}
-
  .row {
    display: grid;
    grid-template-columns: 25% 50% 25%;
+   grid-template-rows: ? auto 50%
  }
 
 img {
@@ -57,21 +96,20 @@ img {
 
 .sideimage {
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 20vw;
+  width: 20vw;
   align-self: center;
   justify-self: center;
 }
 
 .mainimage {
-  height: 400px;
-  width: 400px;
+  height: 30vw;
   justify-self: center;
 }
 
 #about {
-  background-color: var(--pedding);
-  color: var(--pidding);
+  background-color: var(--moss);
+  color: var(--cloud);
 }
 
 #oh {
@@ -85,8 +123,8 @@ img {
 #oh >h2,
 #oh >p {
   grid-column: span 2;
-  background-color: var(--pudding);
-  color: var(--pedding);
+  background-color: var(--island);
+  color: var(--cloud);
   justify-self: stretch;
   padding: var(--spacing3);
   margin: 0;
@@ -95,16 +133,16 @@ img {
 #oh >.right {
   grid-column: 3/4;
   grid-row: 1/3;
-  background-color: var(--pidding);
-  color: var(--pudding);
+  background-color: var(--moss);
+  color: var(--cloud);
   padding: var(--spacing1);
 }
 
 #oh >.left {
   grid-column: 1/2;
   grid-row: 3/5;
-  background-color: var(--pidding);
-  color: var(--pudding);
+  background-color: var(--moss);
+  color: var(--cloud);
   padding: var(--spacing1);
 }
 
@@ -116,7 +154,7 @@ nav {
   position: relative;
 }
 
-nav:before{
+/* nav:before{
   content:'';
   background-image: url('https://ih0.redbubble.net/image.471820828.8545/flat,800x800,075,f.u3.jpg');
   height: 100%;
@@ -124,7 +162,7 @@ nav:before{
   background-size: contain;
   background-repeat: repeat-x;
   position: absolute;
-}
+} */
 
 nav:after{
   content:'';
@@ -137,29 +175,27 @@ nav >a{
 }
 
 nav >a:nth-child(odd){
-  background-color: var(--pedding);
+  background-color: var(--leaf);
 }
 
 nav >a:nth-child(even){
-  background-color: var(--pudding);
+  background-color: var(--bush);
 }
 
 nav >a:hover{
-  background-color: var(--podding);
+  background-color: var(--cloud);
 }
 
 nav >a:visited{
   content:'';
-  color: #ddddd0;
+  color: var(--forest);
 }
 
 nav >a:before{
-  content:'☾ ';
+  content:'🌿 ';
 }
 
 nav >a:after{
-  content:'📁';
+  content:'!';
   position: absolute;
-  top: 0px;
-  left: 1000px;
 }

@@ -39,7 +39,7 @@ body {
   background-color: #c3c3c3;
   text-align: left; }
   .fromBot p {
-    grid-rows: 2/3;
+    grid-row: 2/3;
     padding: 12px;
     background-color: #e6e6e6; }
   .fromBot .name {
@@ -50,14 +50,14 @@ body {
   background-color: #a222a2;
   text-align: right; }
   .fromYou p {
-    grid-rows: 2/3;
+    grid-row: 2/3;
     padding: 12px;
     background-color: #bf8cbf; }
   .fromYou .name {
     background-color: #a222a2; }
 
 .name {
-  grid-rows: 1/2;
+  grid-row: 1/2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px; }
 
