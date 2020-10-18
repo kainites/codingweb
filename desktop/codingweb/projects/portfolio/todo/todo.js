@@ -14,7 +14,6 @@ todoForm.addEventListener("submit", addTodoItem);
 
 function todoItem(iden, item, complete){
   let list = document.createElement("li");
-  console.log(item)
   if (complete) {
     list.classList.add("finished");
   };
@@ -86,15 +85,15 @@ function filterTodo(event){
   let vitems = unList.childNodes;
   vitems.forEach(item => {
     if (v == "all"){
-        item.style.display = "block";
+        item.style.display = "";
         // if asks for all, show all
       } else if (item.classList.contains("finished") && v == "open") {
         item.style.display = "none";
       } else if (v == "open") {
-        item.style.display = "block";
+        item.style.display = "";
         // if asks for open, show all unless finished
       } else if (item.classList.contains("finished") && v == "done") {
-        item.style.display = "block";
+        item.style.display = "";
       } else if (v == "done") {
         item.style.display = "none";
         // if it asks for done, hide all unless finished
