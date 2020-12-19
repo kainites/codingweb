@@ -1,9 +1,11 @@
 $spacing: 16px;
 $border: 12px;
 $font: 11px;
-$pink: #fff5fa;
-$blue: #f5fdff;
-$yellow: #fffff5;
+$lightest: #e8f4ea;
+$light: #e0f0e3;
+$medium: #d2e7d6;
+$dark: #c8e1cc;
+$darkest: #b8d8be;
 
 * {
   margin: 0;
@@ -20,6 +22,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+  padding: $spacing;
 }
 
 header {
@@ -33,15 +36,11 @@ main {
 
   section {
     padding: $spacing;
-      background-color: $blue;
+      background-color: $lightest;
     &:nth-child(even) {
-      background-color: $pink;
+      background-color: $light;
     }
   }
-}
-
-footer {
-  padding: $spacing/2;
 }
 
 form {
@@ -51,10 +50,10 @@ form {
   margin-top: $spacing/2;
 
   input, textarea {
-    background-color: $pink;
+    background-color: $medium;
     outline: none;
     border: none;
-    border-bottom: $border solid $yellow;
+    border-bottom: $border solid $dark;
     text-align: center;
     justify-content: center;
   }
@@ -66,11 +65,11 @@ form {
   p {
     text-align: center;
     justify-content: center;
-    background-color: $pink;
+    background-color: $dark;
     margin-top: $spacing/2;
     font-size: $font;
     padding-top: 0.5vw;
-    border: $border double $yellow;
+    border: $border double $light;
 
   }
 }
@@ -83,13 +82,18 @@ h2 {
   font-weight: bold;
 }
 
+h4 {
+  padding: $spacing;
+  background-color: $lightest;
+}
+
 #fileFetch {
   text-align: center;
   justify-content: center;
-  background-color: $pink;
+  background-color: $medium;
   margin-top: $spacing/2;
   font-size: $font;
-  border: $border double $yellow;
+  border: $border double $light;
   .fetched {
     columns: 150px;
   }
@@ -98,22 +102,22 @@ h2 {
 #fetchedExternal {
   text-align: center;
   justify-content: center;
-  background-color: $pink;
+  background-color: $dark;
   margin-top: $spacing/2;
   font-size: $font;
 
   .fetchedEx {
     text-align: left;
     justify-content: center;
-    background-color: $blue;
+    background-color: $lightest;
     padding: $spacing;
-    border: $border double $yellow;
+    border: $border double $medium;
     margin-bottom: $spacing/2;
   }
 }
 
 .button {
-  background-color: $yellow;
+  background-color: $darkest;
   border: none;
   padding: $spacing/2 $spacing;
   width: 100%;
@@ -124,5 +128,5 @@ footer {
   text-align: center;
   font-size: $font;
   border: none;
-  border-bottom: $border solid $pink;
+  border-bottom: $border solid $darkest;
 }

@@ -30,6 +30,7 @@ h1 {
   margin: 0%;
   padding: 2vh;
   z-index: 10;
+  top: 0%;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -106,6 +107,8 @@ img {
   width: 20vw;
   align-self: center;
   justify-self: center;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
 }
 
 .mainimage {
@@ -123,7 +126,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content auto min-content auto;
   grid-gap: var(--spacing3);
-  padding: var(--spacing1)
+  padding: var(--spacing2)
 }
 
 #oh >h2,
@@ -150,6 +153,14 @@ img {
   background-color: var(--moss);
   color: var(--cloud);
   padding: var(--spacing1);
+}
+
+#exercises {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content auto min-content auto min-content;
+  padding: 0%;
+  margin: 0%;
 }
 
 nav {
